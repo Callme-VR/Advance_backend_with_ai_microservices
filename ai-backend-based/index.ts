@@ -228,7 +228,7 @@ app.post("/ai", async (req, res) => {
 // Health Check
 // ─────────────────────────────────────────────
 
-app.get("/", (_req, res) => {
+app.get("/check", (_req, res) => {
   res.json({
     message: "Jarvis AI Backend is running 🚀",
   });
