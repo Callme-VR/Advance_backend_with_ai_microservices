@@ -5,11 +5,17 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch index.ts",
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "run": "bun --watch rag.ts"
   },
   "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/google-genai": "^2.3.0",
+    "@langchain/qdrant": "^1.0.3",
+    "@langchain/textsplitters": "^1.0.1",
     "@types/bun": "^1.4.0",
     "@types/express": "^5.0.6",
+    "pdf-parse": "^2.4.5",
     "typescript": "^5.0.0"
   },
   "dependencies": {
