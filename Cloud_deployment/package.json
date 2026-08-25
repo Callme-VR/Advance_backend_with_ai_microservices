@@ -7,6 +7,9 @@
     "@types/bun": "latest",
     "@types/express": "^5.0.6"
   },
+  "scripts": {
+    "start": "bun --watch index.ts"
+  },
   "peerDependencies": {
     "typescript": "^5"
   },

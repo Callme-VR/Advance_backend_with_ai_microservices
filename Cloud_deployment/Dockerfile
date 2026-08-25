@@ -1,0 +1,15 @@
+FROM oven/bun:latest
+
+WORKDIR /app
+
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["bun", "start", "index.ts"]
+
+# create the image using docker terminal  for this project
+# docker build -t phase-1-backend . inside and your path
